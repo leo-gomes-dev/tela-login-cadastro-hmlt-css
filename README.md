@@ -1,6 +1,6 @@
 # 📝 Desafio Prático: Tela de Login e Cadastro
 
-Bem-vinda ao seu desafio prático de **HTML** e **CSS**! Aqui você vai aplicar o que aprendeu para estruturar e estilizar uma página web real: uma interface contendo um formulário de **Login** e um de **Cadastro**.
+Bem-vindos ao seu desafio prático de **HTML** e **CSS**! Aqui você vai aplicar o que aprendeu para estruturar e estilizar uma página web real: uma interface contendo um formulário de **Login** e um de **Cadastro**.
 
 Este repositório foi criado para servir de guia. Abaixo, você encontrará as instruções passo a passo para realizar o exercício e publicar seu projeto no GitHub.
 
