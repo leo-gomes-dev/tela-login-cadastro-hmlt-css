@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo: Login e Cadastro</title>
+    <!-- Link para o arquivo CSS externo que vai estilizar esta página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Container principal que centraliza e organiza o conteúdo na tela -->
+    <main class="page-container">
+
+        <!-- Bloco do Formulário de Login -->
+        <section class="form-box">
+            <h2>Já tem conta? Entrar</h2>
+            <p class="subtitle">Insira seus dados para acessar a plataforma.</p>
+            
+            <form action="#">
+                <div class="input-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Entrar</button>
+            </form>
+        </section>
+
+        <!-- Bloco do Formulário de Cadastro -->
+        <section class="form-box highlight-box">
+            <h2>Criar Conta</h2>
+            <p class="subtitle">Cadastre-se para começar a usar.</p>
+            
+            <form action="#">
+                <div class="input-group">
+                    <label for="cadastro-nome">Nome Completo</label>
+                    <input type="text" id="cadastro-nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cadastro-email">E-mail</label>
+                    <input type="email" id="cadastro-email" placeholder="seu-email@link.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="cadastro-senha">Criar Senha</label>
+                    <input type="password" id="cadastro-senha" placeholder="Mínimo 6 caracteres" required>
+                </div>
+
+                <button type="submit" class="btn-secondary">Cadastrar</button>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

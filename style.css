@@ -1,0 +1,137 @@
+/* ==========================================================================
+   RESET BÁSICO
+   Limpa as margens e paddings padrão que os navegadores adicionam sozinhos.
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total do elemento */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização do fundo da tela inteira */
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   CONTAINER PRINCIPAL
+   Organiza as duas caixas (Login e Cadastro) lado a lado em telas grandes
+   ========================================================================== */
+.page-container {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+}
+
+/* ==========================================================================
+   CAIXA DOS FORMULÁRIOS
+   Estilo comum para as duas seções
+   ========================================================================== */
+.form-box {
+    background-color: #ffffff;
+    flex: 1; /* Faz as duas caixas terem exatamente o mesmo tamanho proporcional */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra leve ao redor da caixa */
+}
+
+/* Destaque visual sutil para a caixa de Cadastro */
+.highlight-box {
+    border-top: 5px solid #4f46e5;
+}
+
+/* Títulos e Subtítulos */
+h2 {
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   CAMPOS DE ENTRADA (INPUTS) E LABELS
+   ========================================================================== */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do input */
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s; /* Efeito suave ao clicar no campo */
+}
+
+/* Muda a cor da borda quando a aluna clica dentro do input */
+input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+/* ==========================================================================
+   BOTÕES
+   ========================================================================== */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Botão de Entrar (Login) */
+.btn-primary {
+    background-color: #1f2937;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #374151;
+}
+
+/* Botão de Cadastrar (Cadastro) */
+.btn-secondary {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #4338ca;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE)
+   Se a tela for pequena (celular), coloca os formulários um embaixo do outro
+   ========================================================================== */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
